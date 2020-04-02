@@ -2,6 +2,13 @@
 Here for the rquired project, we are supposed to use the code done using C programming
 usinglocksand condition variables
 
+Locks are methods of synchronization used to prevent multiple threads from accessing a resource at the same time. Usually, they are advisory locks, meaning that each thread must cooperate in gaining and releasing locks. More difficult to implement and less common, mandatory locks actually prevent any other thread from accessing a resource, and issue an exception if this occurs.
+
+There are only two operations that can be applied to a condition variable: wait and signal. When a thread executes a wait call on a condition variable, it is immediately suspended and put into the waiting queue of that condition variable. Thus, this thread is suspended and is waiting for the event that is represented by the condition variable to occur. Because the calling thread is the only thread that is running in the monitor, it "owns" the monitor lock. 
+
+
+One common lock mechanism is the semaphore.
+
 lock_init(struct lock* lock)
 
 lock_acquire(struct lock* lock)
