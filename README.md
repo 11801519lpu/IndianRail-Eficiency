@@ -1,8 +1,10 @@
 # IndianRail-Eficiency
-Here for the rquired project, we are supposed to use the code done using C programming
-using locksand condition variables
 
  IndianRail has decided to improve its efficiency by automating not just its trains but also its passengers. Each passenger and each train is controlled by a thread. You have been hired to write synchronization functions that will guarantee orderly loading of trains.
+
+Here for the required project, we are supposed to use the code done using C programming
+using locksand condition variables
+
 
 Locks are methods of synchronization used to prevent multiple threads from accessing a resource at the same time. Usually, they are advisory locks, meaning that each thread must cooperate in gaining and releasing locks. More difficult to implement and less common, mandatory locks actually prevent any other thread from accessing a resource, and issue an exception if this occurs.
 
